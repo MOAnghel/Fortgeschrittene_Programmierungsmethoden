@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 
 public class Problem1 {
+    /**
+     * Returns a list of not sufficient grades.
+     * Not sufficient grades are grades smaller than 40.
+     */
+
     public static ArrayList<Integer> problem1(int[] grades){
         ArrayList<Integer> notSufficient = new ArrayList<>();
         for (int i = 0; i < grades.length; i++){

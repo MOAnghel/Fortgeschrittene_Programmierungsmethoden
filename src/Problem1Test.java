@@ -19,4 +19,11 @@ public class Problem1Test {
         assertArrayEquals(expected, result);
         System.out.println("Test 1 done...");
     }
+    @Test public void test2(){
+        int[] example = {25, 89, 78, 12};
+        double expected = 51;
+        double result = Problem1.problem2(example);
+        assertEquals(expected,result);
+        System.out.println("Test 2 done...");
+    }
 }

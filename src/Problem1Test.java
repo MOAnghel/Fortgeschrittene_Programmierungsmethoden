@@ -50,6 +50,7 @@ public class Problem1Test {
 
     @Test
     void testAll() {
+        System.out.println("Testing problem1...");
         test1();
         test2();
         test3();

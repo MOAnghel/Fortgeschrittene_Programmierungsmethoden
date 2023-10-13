@@ -26,4 +26,24 @@ public class Problem3 {
         }
         return result;
     }
+
+    public static ArrayList<Integer> problem2(int[] number1, int[] number2){
+        ArrayList<Integer> inverted_result = new ArrayList<>();
+        for (int i = number1.length - 1; i >= 0; i--){
+            if (number1[i] < number2[i]){
+                if(i > 0 && i < number1.length-1){
+                    number1[i - 1] -= 1;
+                    inverted_result.add(10 + number1[i] - number2[i]);
+                }
+
+            } else {
+                inverted_result.add(number1[i] - number2[i]);
+            }
+        }
+        ArrayList<Integer> result = new ArrayList<>(inverted_result.size());
+        for (int i = inverted_result.size() - 1; i >= 0; i--){
+            result.add(inverted_result.get(i));
+        }
+        return result;
+    }
 }

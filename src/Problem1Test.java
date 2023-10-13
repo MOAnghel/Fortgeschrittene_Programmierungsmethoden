@@ -17,14 +17,12 @@ public class Problem1Test {
             result[i] = results.get(i);
         }
         assertArrayEquals(expected, result);
-        System.out.println("Test 1 done...");
     }
     @Test public void test2(){
         int[] example = {25, 89, 78, 12};
         double expected = 51;
         double result = Problem1.problem2(example);
         assertEquals(expected,result);
-        System.out.println("Test 2 done...");
     }
 
     @Test
@@ -37,7 +35,6 @@ public class Problem1Test {
             results[i] = result.get(i);
         }
         assertArrayEquals(expected, results);
-        System.out.println("Test 3 done...");
     }
 
     @Test
@@ -45,12 +42,10 @@ public class Problem1Test {
         int[] grades = {25, 89, 78, 12};
         int result = Problem1.problem4(grades);
         assertEquals(result,90);
-        System.out.println("Test 4 done...");
     }
 
     @Test
     void testAll() {
-        System.out.println("Testing problem1...");
         test1();
         test2();
         test3();

@@ -26,4 +26,33 @@ public class Problem1Test {
         assertEquals(expected,result);
         System.out.println("Test 2 done...");
     }
+
+    @Test
+    public void test3() {
+        int[] grades = {25, 89, 78, 12};
+        int[] expected = {25, 90, 80, 12};
+        ArrayList<Integer> result = Problem1.problem3(grades);
+        int[] results = new int[result.size()];
+        for (int i = 0; i < result.size(); i++){
+            results[i] = result.get(i);
+        }
+        assertArrayEquals(expected, results);
+        System.out.println("Test 3 done...");
+    }
+
+    @Test
+    public void test4() {
+        int[] grades = {25, 89, 78, 12};
+        int result = Problem1.problem4(grades);
+        assertEquals(result,90);
+        System.out.println("Test 4 done...");
+    }
+
+    @Test
+    void testAll() {
+        test1();
+        test2();
+        test3();
+        test4();
+    }
 }

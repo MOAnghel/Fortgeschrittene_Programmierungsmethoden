@@ -66,4 +66,20 @@ public class Problem3 {
         }
         return result;
     }
+
+    public static ArrayList<Integer> problem4(int[] number1, int divisor){
+        int remainder;
+        ArrayList<Integer> inverted_result = new ArrayList<>();
+        for ( int i = 0; i < number1.length; i++){
+            if (number1[i] % divisor != 0){
+                remainder = number1[i] % divisor;
+                number1[i + 1] = remainder * 10 + number1[i + 1];
+                inverted_result.add(number1[i] / divisor );
+            } else {
+                inverted_result.add(number1[i] / divisor);
+            }
+        }
+
+        return inverted_result;
+    }
 }

@@ -37,4 +37,15 @@ class Problem3Test {
             assert (expected[i] == result.get(i));
         }
     }
+
+    @Test
+    void test4(){
+        int [] number1 = {2,3,6,0,0,0,0,0,0};
+        int [] expected = {1,1,8,0,0,0,0,0,0};
+        ArrayList<Integer> result = Problem3.problem4(number1, 2);
+        assert (expected.length == result.size());
+        for(int i = 0; i < expected.length; i++){
+            assert (expected[i] == result.get(i));
+        }
+    }
 }

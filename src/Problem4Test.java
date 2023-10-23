@@ -26,4 +26,12 @@ class Problem4Test {
         int result = Problem4.getMostExpensiveInBudget(prices,budget);
         assert (result == 20);
     }
+
+    @Test
+    void getBestMatchinBudget(){
+        int [] tastaturen = {40, 50, 60};
+        int [] usb_drives = {8, 12};
+        int result = Problem4.getBestMatchInBudget(tastaturen,usb_drives,60);
+        assert (result == 58);
+    }
 }
